@@ -15,7 +15,7 @@ export class ServerApp{
         const table = new CreateTable();
         const tablePrinted = table.execute({ base, limit });
 
-        const wasCreated = new SaveFile().execute({fileContent: tablePrinted,fileName:name,destination: destination,
+        const wasCreated = new SaveFile().execute({fileContent: tablePrinted,fileName:name,fileDestination: destination,
 });
         if (showTable) {
             console.log(tablePrinted);
